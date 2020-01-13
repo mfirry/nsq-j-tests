@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.mfirry</groupId>
+  <artifactId>nsq-j-tests</artifactId>
+  <version>1.4.2</version>
+  <packaging>pom</packaging>
+
+  <properties>
+
+    <!-- Generic properties -->
+    <java.version>1.8</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+  </properties>
+
+  <dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.sproutsocial</groupId>
+      <artifactId>nsq-j</artifactId>
+      <version>0.9.4</version>
+    </dependency>
+  </dependencies>
+  </dependencyManagement>
+
+  <modules>
+    <module>publisher</module>
+    <module>subscriber</module>
+  </modules>
+
+</project>
